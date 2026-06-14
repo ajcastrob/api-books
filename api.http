@@ -1,0 +1,60 @@
+### Raíz
+
+GET http://localhost:1234/ HTTP/1.1
+
+
+### Recuperar todos los libros
+
+GET http://localhost:1234/books HTTP/1.1
+
+
+### Recuperar un libro
+
+GET http://localhost:1234/books/moby-dick HTTP/1.1
+
+
+### Recuperar los libros por un género
+
+GET http://localhost:1234/books?genre=realismo HTTP/1.1
+
+
+### Crear una película
+
+POST http://localhost:1234/books HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "year": 1859,
+    "characters": [
+"Sindney Carton",
+    "Doctor Manette",
+    "Lucía Mannette",
+    "Carlos Darnay",
+
+    ],
+    "name": "Historia de dos Ciudades",
+    "image": "historia-de-dos-ciudades.avif",
+    "description": "Historia que se desarrolla en dos ciudades: Francia e Inglaterra",
+    "summary": "La novela desarolla el complejo tiempo de la revolución francesa",
+    "author": "Charles Dickens",
+    "conflict": "individuo vs convenciones sociales",
+    "genre":["histórico"],
+    "slug": "historia-de-dos-ciudades"
+  }
+
+
+### Actualizar un libro por su id
+
+PATCH http://localhost:1234/books/e4690e7d-79ba-412b-8b5e-7e494e0a5a26 HTTP/1.1
+Content-Type: application/json
+
+{
+  "year": 1862
+}
+
+
+### Borrar un libro por su id
+
+DELETE http://localhost:1234/books/7819fa23-5e64-4456-8b62-f05af7b98dee HTTP/1.1
+Content-Type: application/json
