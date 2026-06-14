@@ -10,12 +10,12 @@ GET http://localhost:1234/books HTTP/1.1
 
 ### Recuperar un libro
 
-GET http://localhost:1234/books/moby-dick HTTP/1.1
+GET http://localhost:1234/books/crimen-y-castigo HTTP/1.1
 
 
 ### Recuperar los libros por un género
 
-GET http://localhost:1234/books?genre=drama HTTP/1.1
+GET http://localhost:1234/books?genre=aventura HTTP/1.1
 
 
 ### Crear un libro
@@ -46,7 +46,7 @@ Content-Type: application/json
 
 ### Actualizar un libro por su id
 
-PATCH http://localhost:1234/books/1b8f4fbf-c309-4162-b4e2-a4e6cbfe1a3c HTTP/1.1
+PATCH http://localhost:1234/books/46 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -57,5 +57,5 @@ Content-Type: application/json
 
 ### Borrar un libro por su id
 
-DELETE http://localhost:1234/books/7819fa23-5e64-4456-8b62-f05af7b98dee HTTP/1.1
+DELETE http://localhost:1234/books/45 HTTP/1.1
 Content-Type: application/json
