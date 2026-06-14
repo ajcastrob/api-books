@@ -45,7 +45,7 @@ export class BooksModel {
   static updateBook = ({ id, info }) => {
     const bookIndex = books.findIndex((book) => book.id === id);
 
-    if (!bookIndex) return false;
+    if (bookIndex < 0) return false;
 
     const updateBook = {
       ...books[bookIndex],
