@@ -18,7 +18,7 @@ GET http://localhost:1234/books/moby-dick HTTP/1.1
 GET http://localhost:1234/books?genre=realismo HTTP/1.1
 
 
-### Crear una película
+### Crear un libro
 
 POST http://localhost:1234/books HTTP/1.1
 Accept: application/json
