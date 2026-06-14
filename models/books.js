@@ -1,10 +1,12 @@
 import books from "../data.json" with { type: "json" };
-import crypto from "crypto";
+import crypto from "node:crypto";
 
 export class BooksModel {
   static getAll = ({ genre }) => {
     if (genre) {
-      return books.filter((book) => book.genre.includes(genre.toLowerCase()));
+      return books
+        .filter((book) => book.genre.includes(genre.toLowerCase()))
+        .map((b) => b.slug);
     }
 
     const nameBooks = books.map((book) => book.slug);
@@ -41,7 +43,7 @@ export class BooksModel {
   };
 
   static updateBook = ({ id, info }) => {
-    const bookIndex = books.find((book) => book.id === id);
+    const bookIndex = books.findIndex((book) => book.id === id);
 
     if (!bookIndex) return false;
 

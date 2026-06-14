@@ -1,5 +1,3 @@
-import books from "../data.json" with { type: "json" };
-import crypto from "node:crypto";
 import { validateSchema, validatePartialSchema } from "../schema/books.js";
 import { BooksModel } from "../models/books.js";
 

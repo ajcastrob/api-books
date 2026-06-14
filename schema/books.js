@@ -26,6 +26,8 @@ const bookSchema = z.object({
       "histórico",
       "ciencia ficción",
       "tragedia",
+      "filosófico",
+      "sátira social",
     ]),
   ),
 });

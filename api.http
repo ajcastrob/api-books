@@ -15,7 +15,7 @@ GET http://localhost:1234/books/moby-dick HTTP/1.1
 
 ### Recuperar los libros por un género
 
-GET http://localhost:1234/books?genre=romance HTTP/1.1
+GET http://localhost:1234/books?genre=drama HTTP/1.1
 
 
 ### Crear un libro
