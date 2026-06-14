@@ -15,7 +15,7 @@ GET http://localhost:1234/books/moby-dick HTTP/1.1
 
 ### Recuperar los libros por un género
 
-GET http://localhost:1234/books?genre=realismo HTTP/1.1
+GET http://localhost:1234/books?genre=romance HTTP/1.1
 
 
 ### Crear un libro
@@ -46,11 +46,12 @@ Content-Type: application/json
 
 ### Actualizar un libro por su id
 
-PATCH http://localhost:1234/books/e4690e7d-79ba-412b-8b5e-7e494e0a5a26 HTTP/1.1
+PATCH http://localhost:1234/books/1b8f4fbf-c309-4162-b4e2-a4e6cbfe1a3c HTTP/1.1
 Content-Type: application/json
 
 {
-  "year": 1862
+  "year": 1859,
+  "author": "desconocido",
 }
 
 
