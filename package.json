@@ -2,9 +2,13 @@
   "name": "api-books",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "REST",
+    "api",
+    "test"
+  ],
   "license": "ISC",
-  "author": "",
+  "author": "a.j.castro.b",
   "type": "module",
   "main": "app.js",
   "scripts": {
