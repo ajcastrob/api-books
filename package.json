@@ -10,11 +10,13 @@
   "scripts": {
     "start:sql": "node server-sql.js",
     "start:local": "node server-local.js",
+    "start:supabase": "node server-supabase.js",
     "dev": "node --watch app.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.1",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mysql2": "^3.22.5",
     "zod": "^4.4.3"
