@@ -31,7 +31,6 @@ export class BooksModel {
               WHERE bg.genre_id = ?`,
         [id],
       );
-
       const nameBooks = books.map((b) => b.slug);
 
       return nameBooks;
@@ -52,7 +51,7 @@ export class BooksModel {
       [lowerCaseSlug],
     );
 
-    return book;
+    return book[0] || null;
   };
 
   static createBook = async ({ info }) => {

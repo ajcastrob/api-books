@@ -1,4 +1,4 @@
-import books from "../data.json" with { type: "json" };
+import books from "../../data.json" with { type: "json" };
 import crypto from "node:crypto";
 
 export class BooksModel {

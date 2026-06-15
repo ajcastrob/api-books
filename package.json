@@ -8,10 +8,12 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start:sql": "node server-sql.js",
+    "start:local": "node server-local.js",
     "dev": "node --watch app.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.108.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "mysql2": "^3.22.5",
