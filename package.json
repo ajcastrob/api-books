@@ -15,6 +15,7 @@
     "start:sql": "node server-sql.js",
     "start:local": "node server-local.js",
     "start:supabase": "node server-supabase.js",
+    "storage:setup": "node scripts/setup-storage.js",
     "dev": "node --watch app.js"
   },
   "dependencies": {
