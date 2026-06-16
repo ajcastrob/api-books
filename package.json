@@ -32,5 +32,8 @@
       "version": "^11.2.2",
       "onFail": "download"
     }
+  },
+  "devDependencies": {
+    "puppeteer": "^25.1.0"
   }
 }
